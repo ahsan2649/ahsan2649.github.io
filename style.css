@@ -1,5 +1,13 @@
 body{
     background-color: #000000;
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+main{
+    background-color: gray;
+    margin: auto;
+    height: 200px;
 }
