@@ -3,18 +3,18 @@ App.component('nav-bar', {
         /*html*/
         `<div class="nav-bar">
             <ul style="list-style-type:none">
-                <li v-for="pic in pics">{{pic.name}}</li>
+                <li v-for="pic in pics">{{pic.name}} {{}}</li>
             </ul>
         </div>`,
     data(){
         return{
             pics: [
-                { name: 'button' },
-                { name: 'button' },
-                { name: 'button' },
-                { name: 'button' },
-                { name: 'button' },
-                { name: 'button' }]
+                { name: 'Delicious Delicacies' },
+                { name: 'Typological' },
+                { name: 'Poi-duino' },
+                { name: 'DX-Ball' },
+                { name: 'Audio' },
+                { name: 'About Me' }]
         }
     }
 })

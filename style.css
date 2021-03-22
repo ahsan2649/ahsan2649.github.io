@@ -9,20 +9,9 @@ body {
 .nav-bar {
   background-color: #00443b;
   flex-basis: 64px;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-property: all;
-  transition-duration: 1s;
-}
-
-.nav-bar:hover {
-  flex-basis: 128px;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-property: all;
-  transition-duration: 1s;
-}
-
-.nav-bar ul {
   display: flex;
+}
+.nav-bar ul {
   flex-direction: column;
   margin-block-start: auto;
   margin-block-end: auto;
@@ -39,8 +28,11 @@ body {
   align-content: center;
   align-items: center;
   justify-content: center;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 15px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
 }
 
 .nav-bar li:hover {
