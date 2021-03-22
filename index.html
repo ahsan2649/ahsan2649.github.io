@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Alif Ahsan Nibir's Portfolio</title>
-        <script src="https://cdn.jsdelivr.net/npm/vue@3.0.7/dist/vue.global.js"></script>
-    </head>
-    <body>
-        <div id="app">
-            <navbar @change-display="displayItem" @decrement="decrement" @increment="increment"></navbar>
-            <displayItem :selecteditem="debug.selectedItem"></displayItem>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alif Ahsan Nibir's Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.7/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <navbar
+        @change-display="displayItem"
+        @decrement="decrement"
+        @increment="increment"
+      ></navbar>
+      <displayitem :selecteditem="selectedItem"></displayitem>
+    </div>
 
-        <script src="./main.js"></script>
-        <script src="./components/navbar.js"></script>
-        <script src="./components/displayItem.js"></script>
+    <script src="./main.js"></script>
+    <script src="./components/navbar.js"></script>
+    <script src="./components/displayTitle.js"></script>
+    <script src="./components/displayDescription.js"></script>
+    <script src="./components/displayCarousel.js"></script>
+    <script src="./components/displayItem.js"></script>
 
-        <script>
-            const mountedApp = app.mount("#app")
-        </script>
-    </body>
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
 </html>

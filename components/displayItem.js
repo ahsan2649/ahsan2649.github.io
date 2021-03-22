@@ -1,49 +1,40 @@
-app.component('displayitem', {
-    props: {
-        selecteditem: {
-            type: Number,
-            required: true
-        }
+app.component("displayitem", {
+  props: {
+    selecteditem: {
+      type: Number,
+      required: true,
     },
-    template:
+  },
+  template:
     /*html*/
     `<div id="window">
-        <div id="title">{{debug.items[selecteditem].title + selecteditem}}</div>
-        <div id="carousel">{{debug.items[selecteditem].carousel + selecteditem}}</div>
-        <div id="description">{{debug.items[selecteditem].description + selecteditem}}</div>
-    </div>`,
-    data() {
-        return {
-            debug: {
-                items: [{
-                        title: 'title',
-                        carousel: 'carousel',
-                        description: 'description'
-                },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                    },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                }]
-            }
-        }
-    },
-    methods: {
+        <displaytitle :selecteditem="selecteditem"></displaytitle>
+        <displaycarousel :selecteditem="selecteditem"></displaycarousel>
+        <displaydescription :selecteditem="selecteditem"></displaydescription>
         
-    }
-})
+    </div>`,
+  data() {
+    return {
+      debug: {
+        items: [
+          {
+            carousel: "carousel",
+          },
+          {
+            carousel: "carousel",
+          },
+          {
+            carousel: "carousel",
+          },
+          {
+            carousel: "carousel",
+          },
+          {
+            carousel: "carousel",
+          },
+        ],
+      },
+    };
+  },
+  methods: {},
+});
