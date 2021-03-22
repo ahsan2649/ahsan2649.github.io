@@ -7,16 +7,13 @@
     </head>
     <body>
         <div id="app">
-            <navbar @change-display="displayItem"></navbar>
-            <div id="window">
-                <div id="title">{{debug.items[debug.selectedItem].title + debug.selectedItem}}</div>
-                <div id="carousel">{{debug.items[debug.selectedItem].carousel + debug.selectedItem}}</div>
-                <div id="description">{{debug.items[debug.selectedItem].description + debug.selectedItem}}</div>
-            </div>
+            <navbar @change-display="displayItem" @decrement="decrement" @increment="increment"></navbar>
+            <displayItem :selecteditem="debug.selectedItem"></displayItem>
         </div>
 
         <script src="./main.js"></script>
         <script src="./components/navbar.js"></script>
+        <script src="./components/displayItem.js"></script>
 
         <script>
             const mountedApp = app.mount("#app")

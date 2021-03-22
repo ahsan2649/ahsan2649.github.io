@@ -2,32 +2,7 @@ const app = Vue.createApp({
     data() {
         return {
             debug: {
-                selectedItem: 0,
-                items: [{
-                        title: 'title',
-                        carousel: 'carousel',
-                        description: 'description'
-                },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                    },
-                    {
-                    title: 'title',
-                    carousel: 'carousel',
-                    description: 'description'
-                }]
+                selectedItem: 0
             }
         }
     },
@@ -35,6 +10,16 @@ const app = Vue.createApp({
         displayItem(index) {
             this.debug.selectedItem = index
             console.log(index)
+        },
+        decrement() {
+            if (this.debug.selectedItem > 0) {
+                this.debug.selectedItem--
+            }
+        },
+        increment(length) {
+            if (this.debug.selectedItem < length-1) {
+                this.debug.selectedItem++
+            }
         }
     }
 })
