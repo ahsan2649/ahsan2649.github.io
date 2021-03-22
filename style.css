@@ -9,6 +9,42 @@ body {
 .nav-bar {
   background-color: #00443b;
   flex-basis: 64px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.nav-bar:hover {
+  flex-basis: 128px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: auto;
+  margin-block-end: auto;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  padding-inline-start: 0;
+}
+
+.nav-bar li {
+  width: auto;
+  height: 64px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.nav-bar li:hover {
+  background-color: rgb(32, 58, 54);
+}
+.nav-bar li:active {
+  background-color: rgb(19, 44, 32);
 }
 
 .window {
