@@ -1,5 +1,7 @@
 App.component('description', {
-    template: `<div>description</div>`,
+    template:
+        /*html*/
+        `<div>description</div>`,
     data(){
         return{
 

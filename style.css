@@ -8,22 +8,25 @@ body {
 
 .nav-bar {
   background-color: #00443b;
-  flex-basis: 50px;
-}
-
-.debug {
-  background-color: rgb(0, 53, 35);
-  margin: 15px;
-  padding: 15px;
-  color: rgb(246, 246, 246);
-  border-radius: 15px;
-  text-align: center;
-
-  /* display: flex; */
+  flex-basis: 64px;
 }
 
 .window {
   background-color: rgb(0, 34, 18);
   height: auto;
   flex: 9 3 auto;
+}
+
+.item {
+  display: flex;
+  align-content: center;
+  background-color: rgb(0, 53, 35);
+  margin: 15px;
+  padding: 15px;
+  color: rgb(246, 246, 246);
+  border-radius: 15px;
+  text-align: center;
+  min-height: 100px;
+  align-content: center;
+  align-items: center;
 }

@@ -1,5 +1,7 @@
 App.component('display', {
-    template: `<div>display</div>`,
+    template:
+        /*html*/
+        `<div>display</div>`,
     data(){
         return{
 
