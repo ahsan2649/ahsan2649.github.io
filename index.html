@@ -7,7 +7,16 @@
     </head>
     <body>
         <div id="app">
-            <div>{{debug}}</div>
+            <div id="navbar">
+                <ul>
+                    <li v-for="(item, index) in debug.nav" :key="index">{{item + index.toString()}}</li>
+                </ul>
+            </div>
+            <div id="window">
+                <div id="title">{{debug.items[debug.selectedItem].title + debug.selectedItem}}</div>
+                <div id="carousel">{{debug.items[debug.selectedItem].carousel + debug.selectedItem}}</div>
+                <div id="description">{{debug.items[debug.selectedItem].description + debug.selectedItem}}</div>
+            </div>
         </div>
 
         <script src="./main.js"></script>
