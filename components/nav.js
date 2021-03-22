@@ -1,5 +1,7 @@
 App.component('nav-bar', {
-    template: `<div>Nav</div>`,
+    template:
+    /*html*/
+    `<div class="nav-bar"></div>`,
     data(){
         return{
 

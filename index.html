@@ -6,12 +6,18 @@
         <script src="https://unpkg.com/vue@3.0.7"></script>
     </head>
     <body>
-        <div id="app">
+        <div id="app" style="display: flex; height: 100%;">
             <nav-bar></nav-bar>
-            <div>{{name}}</div>
+            <window></window>
         </div>
+        
         <script src="./main.js"></script>
         <script src="./components/nav.js"></script>
+        <script src="./components/window.js"></script>
+        <script src="./components/item.js"></script>
+        <script src="./components/display.js"></script>
+        <script src="./components/description.js"></script>
+
         <script>const mountedApp = App.mount('#app')</script>
     </body>
 </html>
