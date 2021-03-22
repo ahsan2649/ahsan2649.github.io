@@ -9,7 +9,7 @@
         <div id="app">
             <div id="navbar">
                 <ul>
-                    <li v-for="(item, index) in debug.nav" :key="index">{{item + index.toString()}}</li>
+                    <li v-for="(item, index) in debug.nav" :key="index" @click="displayItem(index)">{{item + index.toString()}}</li>
                 </ul>
             </div>
             <div id="window">

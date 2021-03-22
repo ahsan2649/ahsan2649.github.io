@@ -31,6 +31,13 @@ const app = {
                 }]
             }
         }
+    },
+    methods: {
+        displayItem(index) {
+            this.debug.selectedItem = index
+            console.log(index)
+        }
     }
+
 }
 
