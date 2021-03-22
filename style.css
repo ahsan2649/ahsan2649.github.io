@@ -38,6 +38,9 @@ body {
   text-align: center;
   align-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .nav-bar li:hover {
