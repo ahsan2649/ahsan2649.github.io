@@ -1,8 +1,7 @@
-const app = {
+const app = Vue.createApp({
     data() {
         return {
             debug: {
-                nav: ['item', 'item', 'item', 'item', 'item'],
                 selectedItem: 0,
                 items: [{
                         title: 'title',
@@ -38,6 +37,4 @@ const app = {
             console.log(index)
         }
     }
-
-}
-
+})

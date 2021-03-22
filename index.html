@@ -7,11 +7,7 @@
     </head>
     <body>
         <div id="app">
-            <div id="navbar">
-                <ul>
-                    <li v-for="(item, index) in debug.nav" :key="index" @click="displayItem(index)">{{item + index.toString()}}</li>
-                </ul>
-            </div>
+            <navbar @change-display="displayItem"></navbar>
             <div id="window">
                 <div id="title">{{debug.items[debug.selectedItem].title + debug.selectedItem}}</div>
                 <div id="carousel">{{debug.items[debug.selectedItem].carousel + debug.selectedItem}}</div>
@@ -20,9 +16,10 @@
         </div>
 
         <script src="./main.js"></script>
+        <script src="./components/navbar.js"></script>
 
         <script>
-            Vue.createApp(app).mount('#app')
+            const mountedApp = app.mount("#app")
         </script>
     </body>
 </html>
