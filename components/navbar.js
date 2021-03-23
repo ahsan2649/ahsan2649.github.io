@@ -1,18 +1,42 @@
 app.component("navbar", {
+  props: {
+    selecteditem: {
+      type: Number,
+    },
+  },
   template:
     /*html*/
     `<div id="navbar">
-        <div @click="decrement" class="navbar-arrow arrow-left"><</div>
+        <div @click="decrementEmit" class="navbar-arrow arrow-left">&lt</div>
         <ul>
-            <li v-for="(item, index) in debug.nav" :key="index" @click="changeDisplay(index)">O</li>
+            <li v-for="(item, index) in this.nav" :key="index" @click="changeDisplay(index)" alt="item" :class="index==this.selecteditem ? 'activeItem' : 'inactiveItem' ">O</li>
         </ul>
-        <div @click="increment" class="navbar-arrow arrow-right">></div>
+        <div @click="incrementEmit" class="navbar-arrow arrow-right">></div>
     </div>`,
   data() {
     return {
-      debug: {
-        nav: ["item", "item", "item", "item", "item"],
-      },
+      nav: [
+        {
+          isActive: false,
+          name: "item",
+        },
+        {
+          isActive: false,
+          name: "item",
+        },
+        {
+          isActive: false,
+          name: "item",
+        },
+        {
+          isActive: false,
+          name: "item",
+        },
+        {
+          isActive: false,
+          name: "item",
+        },
+      ],
     };
   },
   methods: {
@@ -20,12 +44,12 @@ app.component("navbar", {
       this.$emit("change-display", index);
       //console.log('emitted' + ' ' + index)
     },
-    decrement() {
-      this.$emit("decrement", this.debug.nav.length);
+    decrementEmit() {
+      this.$emit("decrement-emit", this.nav.length);
       //console.log('emitted' + ' ' + index)
     },
-    increment() {
-      this.$emit("increment", this.debug.nav.length);
+    incrementEmit() {
+      this.$emit("increment-emit", this.nav.length);
       //console.log('emitted' + ' ' + index)
     },
   },

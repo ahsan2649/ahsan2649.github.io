@@ -6,6 +6,39 @@ body {
   margin: 0;
 }
 
+* {
+  border-radius: 15px;
+}
+
+#title {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+  font-size: 12pt;
+}
+
+#description div {
+  width: 800px;
+  margin: 25px;
+  text-align: justify;
+}
+
+#carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#carousel img {
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
 #app {
   display: grid;
   grid-template-areas:
@@ -36,10 +69,37 @@ body {
 }
 
 #navbar li,
-.navbar-arrow {
+.navbar-arrow,
+.carousel-arrow {
   padding: 15px;
+  user-select: none;
+  transition: "background-color";
+  transition-duration: 0.3s;
+}
+
+.carousel-arrow {
+  margin: 5px;
+}
+
+#navbar li:hover,
+.navbar-arrow:hover,
+.carousel-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.24);
 }
 
 #window {
   grid-area: window;
+}
+
+.hideimg {
+  display: none;
+  opacity: 0;
+}
+
+.displayimg {
+  opacity: 100;
+}
+
+.activeItem {
+  background-color: rgba(255, 255, 255, 0.424);
 }

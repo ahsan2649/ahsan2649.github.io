@@ -7,7 +7,7 @@ app.component("displaytitle", {
   },
   template:
     /*html*/
-    `<div id="title">{{titles[selecteditem]}}</div>`,
+    `<h2 id="title">{{titles[selecteditem]}}</h2>`,
   data() {
     return {
       titles: [

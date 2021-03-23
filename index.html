@@ -10,9 +10,10 @@
     <div id="app">
       <displayitem :selecteditem="selecteditem"></displayitem>
       <navbar
+        :selecteditem="selecteditem"
         @change-display="displayItem"
-        @decrement="decrement"
-        @increment="increment"
+        @decrement-emit="decrement"
+        @increment-emit="increment"
       ></navbar>
     </div>
 
