@@ -14,27 +14,7 @@ app.component("displayitem", {
         
     </div>`,
   data() {
-    return {
-      debug: {
-        items: [
-          {
-            carousel: "carousel",
-          },
-          {
-            carousel: "carousel",
-          },
-          {
-            carousel: "carousel",
-          },
-          {
-            carousel: "carousel",
-          },
-          {
-            carousel: "carousel",
-          },
-        ],
-      },
-    };
+    return {};
   },
   methods: {},
 });

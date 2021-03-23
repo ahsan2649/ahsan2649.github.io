@@ -1,21 +1,21 @@
 const app = Vue.createApp({
   data() {
     return {
-      selectedItem: 0,
+      selecteditem: 0,
     };
   },
   methods: {
     displayItem(index) {
-      this.selectedItem = index;
+      this.selecteditem = index;
     },
     decrement() {
-      if (this.selectedItem > 0) {
-        this.selectedItem--;
+      if (this.selecteditem > 0) {
+        this.selecteditem--;
       }
     },
     increment(length) {
-      if (this.selectedItem < length - 1) {
-        this.selectedItem++;
+      if (this.selecteditem < length - 1) {
+        this.selecteditem++;
       }
     },
   },

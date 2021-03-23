@@ -7,9 +7,17 @@ app.component("displaycarousel", {
   },
   template:
     /*html*/
-    `<div id="carousel">{{imagepaths[selecteditem][0]}}</div>`,
+    `<img :src="imagepaths[selecteditem]" width="600">`,
   data() {
-    return { imagepaths: [[123], [456], [789], [101112], [131415]] };
+    return {
+      imagepaths: [
+        "./images/pexels-ave-calvar-martinez-3497624.jpg",
+        "./images/pexels-james-lee-2017021.jpg",
+        "./images/pexels-skyler-ewing-4793432.jpg",
+        "./images/pexels-dominykas-4411214.jpg",
+        "./images/pexels-saya-kimura-401107.jpg",
+      ],
+    };
   },
   methods: {},
 });
