@@ -11,7 +11,6 @@ app.component("displayitem", {
         <displaytitle :selecteditem="selecteditem"></displaytitle>
         <displaycarousel :selecteditem="selecteditem"></displaycarousel>
         <displaydescription :selecteditem="selecteditem"></displaydescription>
-        
     </div>`,
   data() {
     return {};

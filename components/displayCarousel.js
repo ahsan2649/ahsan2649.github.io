@@ -7,7 +7,9 @@ app.component("displaycarousel", {
   },
   template:
     /*html*/
-    `<img :src="imagepaths[selecteditem]" width="600">`,
+    `<div>prev image</div>
+    <img :src="imagepaths[selecteditem]" width="600">
+    <div>next image</div>`,
   data() {
     return {
       imagepaths: [
