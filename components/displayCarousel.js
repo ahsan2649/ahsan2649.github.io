@@ -7,9 +7,11 @@ app.component("displaycarousel", {
   },
   template:
     /*html*/
-    `<div @click="decrementpic">prev image</div>
+    `<div id="carousel">
+    <div @click="decrementpic" class="carousel-arrow"><</div>
     <img :src="this.imagepaths[selecteditem][this.selectedpic]" width="600">
-    <div @click="incrementpic">next image</div>`,
+    <div @click="incrementpic" class="carousel-arrow">></div>
+    </div>`,
   data() {
     return {
       selectedpic: 1,

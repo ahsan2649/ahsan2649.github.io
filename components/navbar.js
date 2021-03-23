@@ -2,11 +2,11 @@ app.component("navbar", {
   template:
     /*html*/
     `<div id="navbar">
-        <div @click="decrement">Go up</div>
+        <div @click="decrement" class="navbar-arrow arrow-left"><</div>
         <ul>
-            <li v-for="(item, index) in debug.nav" :key="index" @click="changeDisplay(index)">{{item + index.toString()}}</li>
+            <li v-for="(item, index) in debug.nav" :key="index" @click="changeDisplay(index)">O</li>
         </ul>
-        <div @click="increment">Go down</div>
+        <div @click="increment" class="navbar-arrow arrow-right">></div>
     </div>`,
   data() {
     return {
