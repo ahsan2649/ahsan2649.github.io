@@ -21,7 +21,7 @@ app.component("navbar", {
       //console.log('emitted' + ' ' + index)
     },
     decrement() {
-      this.$emit("decrement");
+      this.$emit("decrement", this.debug.nav.length);
       //console.log('emitted' + ' ' + index)
     },
     increment() {

@@ -8,14 +8,18 @@ const app = Vue.createApp({
     displayItem(index) {
       this.selecteditem = index;
     },
-    decrement() {
+    decrement(length) {
       if (this.selecteditem > 0) {
         this.selecteditem--;
+      } else {
+        this.selecteditem = length - 1;
       }
     },
     increment(length) {
       if (this.selecteditem < length - 1) {
         this.selecteditem++;
+      } else {
+        this.selecteditem = 0;
       }
     },
   },
