@@ -12,10 +12,10 @@ app.component("displaytitle", {
     return {
       titles: [
         "Delicious Delicacies",
-        "Typology",
+        "Audio Visualizer",
         "Poi-duino 2.0",
         "DX-Ball Clone",
-        "Audio Visualizer",
+        "Typology",
       ],
     };
   },
