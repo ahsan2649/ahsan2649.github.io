@@ -15,7 +15,7 @@ app.component("displaytitle", {
         "Audio Visualizer",
         "Poi-duino 2.0",
         "DX-Ball Clone",
-        "Typology",
+        "Typo-logy",
       ],
     };
   },
