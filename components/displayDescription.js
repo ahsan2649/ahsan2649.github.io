@@ -12,7 +12,7 @@ app.component("displaydescription", {
     return {
       descriptions: [
         /*html*/
-        `<b>Delicious Delicacies</b> is a prototype for a time management game. The player takes on the role of managing a diner, as they show customers to their tables, take their orders, and prepare and serve their food. This is the first proper prototype that I made with Unity.`,
+        `Delicious Delicacies is a prototype for a time management game. The player takes on the role of managing a diner, as they show customers to their tables, take their orders, and prepare and serve their food. This is the first proper prototype that I made with Unity.`,
         /*html*/
         `An audio visualizer made in Unity by performing a Fast Fourier Transform on the spectrum of the audio. The resulting data is split into an array of 256 values, from which clusters are summed, averaged, and mapped to give out 8 frequency bands. The average of the sum of the frequency bands also serve as an amplitude input. Together, they can be mapped to different values, such as column heights, colors, opacities etc.`,
         /*html*/
@@ -21,6 +21,12 @@ app.component("displaydescription", {
         `DX-Ball was one of my most favorite games from when I was in Kindergarten. So after I first learned Unity, I sought to make a clone of it myself. After a few iterations and designs, I've arrived at this prototype. For me, it was a good exercise in basic problem solving, as well as understanding the bridge between design and programming.`,
         /*html*/
         `Typo-logy is a typing game I made for myself in Unity to practice Dvorak typing. It takes in a given exercise string, and outputs each character at a specific pace, to be typed within a specific time limit. The characters appear as simple text on top of a simple sprite.`,
+        /*html*/
+        `<p>After finishing up with my other projects, I took up online lessons on basic VueJS, and created this website from scratch while I was learning it. I specifically chose Vue as my framework for web development, because I felt React was a bit too commonplace. The unexpected pay-off was that I was able to learn the basics very fast, and get the website up and running in a week, with only prior knowledge of HTML, CSS, and a little more than basic JavaScript.
+        </p>
+        <p>
+        The problem solving mindset that I've begun to develop while working on my game projects translated very well over to the field of web development. The result is a very modular website that can be easily scaled, and iterated on with ease and precision.
+        </p>`,
       ],
     };
   },
