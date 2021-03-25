@@ -31,7 +31,7 @@ app.component("displaycarousel", {
         [
           {
             isActive: true,
-            src: `<img src="./images/3/pexels-irina-iriser-1379627.jpg" height=450>`,
+            src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/JdSDHHzQq68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
           },
         ],
         [
