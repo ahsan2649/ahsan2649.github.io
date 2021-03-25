@@ -18,23 +18,27 @@ app.component("navbar", {
       nav: [
         {
           isActive: false,
-          name: "item",
+          name: "DeliciousDelicacies",
         },
         {
           isActive: false,
-          name: "item",
+          name: "AudioVisualizer",
         },
         {
           isActive: false,
-          name: "item",
+          name: "Poi-duino2.0",
         },
         {
           isActive: false,
-          name: "item",
+          name: "DXBallClone",
         },
         {
           isActive: false,
-          name: "item",
+          name: "Typo-logy",
+        },
+        {
+          isActive: false,
+          name: "AboutThisWebsite",
         },
       ],
     };
