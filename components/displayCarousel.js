@@ -9,7 +9,7 @@ app.component("displaycarousel", {
     /*html*/
     `<div id="carousel">
     <div v-if="this.imagepaths[this.selecteditem].length>1" @click="decrementpic(this.imagepaths[this.selecteditem].length)" class="carousel-arrow">&lt</div>
-    <div v-for="item in imagepaths[selecteditem]" v-html="item.src" width=600 :class="item.isActive ? 'displayimg' : 'hideimg'"></div>
+    <div v-for="item in imagepaths[selecteditem]" v-html="item.src" width=800 :class="item.isActive ? 'displayimg' : 'hideimg'"></div>
     <div v-if="this.imagepaths[this.selecteditem].length>1" @click="incrementpic(this.imagepaths[this.selecteditem].length)" class="carousel-arrow" >></div>
     </div>`,
   data() {
@@ -19,37 +19,37 @@ app.component("displaycarousel", {
         [
           {
             isActive: true,
-            src: `<iframe width="600" height="405" src="https://www.youtube.com/embed/i7OZLEgsJ3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/i7OZLEgsJ3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
           },
         ],
         [
           {
             isActive: true,
-            src: `<iframe width="600" height="405" src="https://www.youtube.com/embed/MeY7A2XuDDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/MeY7A2XuDDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
           },
         ],
         [
           {
             isActive: true,
-            src: `<img src="./images/3/pexels-irina-iriser-1379627.jpg" width=600>`,
+            src: `<img src="./images/3/pexels-irina-iriser-1379627.jpg" height=450>`,
           },
         ],
         [
           {
             isActive: true,
-            src: `<iframe width="600" height="405" src="https://www.youtube.com/embed/7UVmD600P_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/7UVmD600P_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
           },
         ],
         [
           {
             isActive: true,
-            src: `<iframe width="600" height="405" src="https://www.youtube.com/embed/PvIOwp9NG74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/PvIOwp9NG74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
           },
         ],
         [
           {
             isActive: true,
-            src: `<img src="./images/3/pexels-irina-iriser-1379627.jpg" width=600>`,
+            src: `<img src="./images/3/pexels-irina-iriser-1379627.jpg" height=450>`,
           },
         ],
       ],
