@@ -19,7 +19,7 @@ app.component("displaycarousel", {
         [
           {
             isActive: true,
-            src: `<img height=450 src="./images/me.JPG" alt="Yours Truly">`,
+            src: `<img height=450 src="./images/me.jpg" alt="Yours Truly">`,
           },
         ],
         [
