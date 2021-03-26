@@ -39,6 +39,18 @@ app.component("displaycarousel", {
             isActive: true,
             src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/JdSDHHzQq68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
           },
+          {
+            isActive: false,
+            src: `<img height=450 src="./images/duin.JPG" alt="Arduino, Sensor and Light">`,
+          },
+          {
+            isActive: false,
+            src: `<img height=450 src="./images/light.JPG" alt="Lighting up the Poi">`,
+          },
+          {
+            isActive: false,
+            src: `<img height=450 src="./images/flower.jpg" alt="flower pattern">`,
+          },
         ],
         [
           {
