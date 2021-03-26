@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-color: #000000;
+  background-color: #200d35;
   color: white;
   margin: 0;
 }
@@ -14,45 +14,40 @@ body {
 #title h2 {
   font-family: sans-serif;
   text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 50pt;
+  padding: 15px 15px;
+  font-size: 54pt;
   transition: all;
   transition-duration: 0.3s;
   width: fit-content;
-  margin: 10px auto;
-  padding: 25px;
+  margin: 5px auto;
   user-select: none;
   border-radius: 15px;
   border-bottom-left-radius: 25px;
   border-top-right-radius: 25px;
 }
 #title h2:hover {
-  background-color: rgb(41, 41, 41);
+  background-color: rgba(255, 255, 255, 0.158);
+  font-size: 56pt;
 }
 
 #description {
   display: flex;
   justify-content: center;
-  margin: 25px;
+  margin: 15px;
 }
 
 #description p {
-  padding: 15px;
+  padding: 10px 15px;
   width: 800px;
   text-align: justify;
   font-size: 15pt;
-  border-right: 2px dotted black;
-  border-left: 2px dotted black;
   transition: all;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 #description p:hover {
-  border-right: 3px solid white;
-  border-left: 3px solid white;
+  background-color: rgba(255, 255, 255, 0.185);
 }
 
 #carousel {
@@ -84,6 +79,8 @@ body {
   position: sticky;
   bottom: 0px;
   background-color: black;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 #navbar ul {
