@@ -18,6 +18,10 @@ app.component("navbar", {
       nav: [
         {
           isActive: false,
+          name: "RegardingMyself",
+        },
+        {
+          isActive: false,
           name: "DeliciousDelicacies",
         },
         {

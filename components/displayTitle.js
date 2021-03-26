@@ -11,6 +11,7 @@ app.component("displaytitle", {
   data() {
     return {
       titles: [
+        "Regarding Myself",
         "Delicious Delicacies",
         "Audio Visualizer",
         "Poi-duino 2.0",

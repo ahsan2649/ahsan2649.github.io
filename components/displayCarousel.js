@@ -25,6 +25,12 @@ app.component("displaycarousel", {
         [
           {
             isActive: true,
+            src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/i7OZLEgsJ3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+          },
+        ],
+        [
+          {
+            isActive: true,
             src: `<iframe width="800" height="450" src="https://www.youtube.com/embed/MeY7A2XuDDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
           },
         ],
