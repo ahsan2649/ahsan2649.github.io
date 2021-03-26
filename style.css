@@ -1,9 +1,11 @@
 html,
 body {
   height: 100%;
-  background-color: #200d35;
+  background-image: linear-gradient(225deg, rgb(20, 3, 37), rgb(7, 4, 8));
+  background-attachment: fixed;
   color: white;
   margin: 0;
+  padding: 0;
 }
 
 * {
@@ -26,7 +28,7 @@ body {
   border-top-right-radius: 25px;
 }
 #title h2:hover {
-  background-color: rgba(255, 255, 255, 0.158);
+  background-color: rgba(255, 255, 255, 0.082);
   font-size: 56pt;
 }
 
@@ -56,10 +58,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-#carousel img {
-  transition-property: all;
-  transition-duration: 0.3s;
-}
 
 #app {
   display: grid;
@@ -70,8 +68,12 @@ body {
   height: 100%;
 }
 
+#window {
+  grid-area: "window";
+}
+
 #navbar {
-  grid-area: navbar;
+  grid-area: "navbar";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,10 +111,6 @@ body {
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-#window {
-  grid-area: window;
-}
-
 .hideimg {
   display: none;
   opacity: 0;
@@ -120,6 +118,13 @@ body {
 
 .displayimg {
   opacity: 100;
+  border: 3px solid transparent;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.displayimg:hover {
+  border: 3px solid white;
 }
 
 .activeItem {
