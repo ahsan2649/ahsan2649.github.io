@@ -19,7 +19,7 @@ app.component("displaycarousel", {
         [
           {
             isActive: true,
-            src: `<img height=450 src="./images/Me.jpg" alt="Yours Truly">`,
+            src: `<img height=450 src="./images/Me.png" alt="Yours Truly">`,
           },
         ],
         [
@@ -41,15 +41,15 @@ app.component("displaycarousel", {
           },
           {
             isActive: false,
-            src: `<img height=450 src="./images/duin.JPG" alt="Arduino, Sensor and Light">`,
+            src: `<img height=450 src="./images/duin.png" alt="Arduino, Sensor and Light">`,
           },
           {
             isActive: false,
-            src: `<img height=450 src="./images/light.JPG" alt="Lighting up the Poi">`,
+            src: `<img height=450 src="./images/light.png" alt="Lighting up the Poi">`,
           },
           {
             isActive: false,
-            src: `<img height=450 src="./images/flower.jpg" alt="flower pattern">`,
+            src: `<img height=450 src="./images/flower.png" alt="flower pattern">`,
           },
         ],
         [
@@ -67,7 +67,7 @@ app.component("displaycarousel", {
         [
           {
             isActive: true,
-            src: `<img src="./images/AboutWeb.jpg" height=450>`,
+            src: `<img src="./images/AboutWeb.png" height=450>`,
           },
         ],
       ],
