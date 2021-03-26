@@ -55,7 +55,7 @@ app.component("displaycarousel", {
         [
           {
             isActive: true,
-            src: `<img src="./images/3/pexels-irina-iriser-1379627.jpg" height=450>`,
+            src: `<img src="./images/AboutWeb.jpg" height=450>`,
           },
         ],
       ],

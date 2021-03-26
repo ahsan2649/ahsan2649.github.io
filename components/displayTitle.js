@@ -17,7 +17,7 @@ app.component("displaytitle", {
         "Poi-duino 2.0",
         "DX-Ball Clone",
         "Typo-logy",
-        "About this website",
+        "Regarding this website",
       ],
     };
   },
