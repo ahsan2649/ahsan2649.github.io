@@ -9,7 +9,7 @@ app.component("navbar", {
     `<div id="navbar">
         <div @click="decrementEmit" class="navbar-arrow arrow-left">&lt</div>
         <ul>
-            <li v-for="(item, index) in this.nav" :key="index" @click="changeDisplay(index)" alt="item" :class="index==this.selecteditem ? 'activeItem' : 'inactiveItem' ">O</li>
+            <li v-for="(item, index) in this.nav" :key="index" @click="changeDisplay(index)" alt="item" :class="index==this.selecteditem ? 'activeItem' : 'inactiveItem' ">{{index+1}}</li>
         </ul>
         <div @click="incrementEmit" class="navbar-arrow arrow-right">></div>
     </div>`,
